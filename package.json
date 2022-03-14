@@ -1,0 +1,25 @@
+{
+  "name": "semana-javascript-expert06",
+  "version": "1.0.0",
+  "description": "Seja bem vindo(a) à sexta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurdenner/semanajsexpert-spotify-template.git"
+  },
+  "keywords": [],
+  "author": "Arthur Denner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurdenner/semanajsexpert-spotify-template/issues"
+  },
+  "homepage": "https://github.com/arthurdenner/semanajsexpert-spotify-template#readme"
+}
