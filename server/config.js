@@ -22,4 +22,13 @@ export default {
   location: {
     home: '/home',
   },
+  constants: {
+    contentType: {
+      '.css': 'text/css',
+      '.html': 'text/html',
+      '.jpg': 'image/jpeg',
+      '.js': 'text/javascript',
+      '.png': 'image/png',
+    },
+  },
 };

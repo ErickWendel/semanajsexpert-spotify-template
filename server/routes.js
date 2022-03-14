@@ -4,7 +4,7 @@ import { Controller } from './controller.js';
 import { logger } from './util.js';
 
 const controller = new Controller();
-const { pages, location } = config;
+const { constants, pages, location } = config;
 
 async function routes(request, response) {
   const { headers, method, url } = request;
@@ -28,8 +28,8 @@ async function routes(request, response) {
 
   // Request for files
   if (method === 'GET') {
-    const { stream } = await controller.getFileStream(url);
-
+    const { stream, type } = await controller.getFileStream(url);
+    response.writeHead(200, { 'Content-Type': constants.contentType[type] });
     return stream.pipe(response);
   }
 
