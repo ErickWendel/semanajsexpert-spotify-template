@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "node server",
+    "server:dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/arthurdenner/semanajsexpert-spotify-template/issues"
   },
-  "homepage": "https://github.com/arthurdenner/semanajsexpert-spotify-template#readme"
+  "homepage": "https://github.com/arthurdenner/semanajsexpert-spotify-template#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
