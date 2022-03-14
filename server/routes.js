@@ -28,9 +28,7 @@ async function routes(request, response) {
 
   // Request for files
   if (method === 'GET') {
-    const [basepage] = headers.referer.split('/').reverse();
-    const filename = basepage.concat(url);
-    const { stream } = await controller.getFileStream(filename);
+    const { stream } = await controller.getFileStream(url);
 
     return stream.pipe(response);
   }
