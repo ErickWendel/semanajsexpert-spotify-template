@@ -25,5 +25,9 @@
   "homepage": "https://github.com/arthurdenner/semanajsexpert-spotify-template#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3"
   }
 }
